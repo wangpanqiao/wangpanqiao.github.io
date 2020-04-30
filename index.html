@@ -494,7 +494,7 @@
         let coverSlider = $('.carousel');
 
         //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
+        let initUserPressedOrDraggedActive = true
 
         //用户触摸轮播自动 restartPlay
         function initUserPressedOrDragged(instance) {
@@ -593,12 +593,15 @@
 </style>
 
 
-<!-- 网易云外链音乐 -->
-<!-- 只有发布和编译到端口才会自动播放 -->
-<div style="position:absolute;left:50px;bottom:100px;">
-	<iframe frameborder="no" border="0" marginwidth="0" marginheight="100%" width=330 height=86 
-		src="//music.163.com/outchain/player?type=2&id=1370748318&auto=1&height=66"></iframe>
+<div align="center" style="margin:0 auto;">
+    <div style="width:500px;height:180px;overflow:hidden;border:0px"> 
+         <div style="width:500px;height:800px;margin:-280px 500px 0px -265px;">
+			<iframe frameborder="no" border="0" marginwidth="0" marginheight="100%" width=330 height=86 
+				src="//music.163.com/outchain/player?type=2&id=1370748318&auto=1&height=66"></iframe>
+         </div> 
+     </div> 
 </div>
+
 <script>
 	var music = document.getElementById('video');
 	var state = 0;
@@ -617,14 +620,7 @@
 		music.play();
 	}    
 </script>
-<div align="center" style="margin:0 auto;">
-    <div style="width:500px;height:180px;overflow:hidden;border:0px"> 
-         <div style="width:500px;height:800px;margin:-280px 500px 0px -265px;">
-              <iFrame src="http://www.baidu.com" width="800" height="500" scrolling="no">
-             </iFrame>
-         </div> 
-     </div> 
-</div>
+
 
 <div class="music-player">
     
