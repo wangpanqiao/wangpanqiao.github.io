@@ -615,8 +615,13 @@
 <script src="/libs/aplayer/APlayer.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
+</div>
+<!-- 本地音乐，双击index.html -->
 <div style="position:absolute;left:0px;bottom:0px;">
-	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1436910205&auto=1&height=66"></iframe>
+	<!-- 隐藏播放条：删除ontrols="controls"部分 -->
+	<audio autoplay="autopaly" loop="loop" controls="controls" id="audios">
+		<source src="//medias/music/qianyuqianxun.mp3" type="audio/mp3" />
+	</audio>
 </div>
                         
 
