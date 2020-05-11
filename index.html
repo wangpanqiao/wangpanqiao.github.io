@@ -435,7 +435,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/2.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/1.jpg)');
 </script>
 
 
@@ -494,7 +494,7 @@
         let coverSlider = $('.carousel');
 
         //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = true
+        let initUserPressedOrDraggedActive = false
 
         //用户触摸轮播自动 restartPlay
         function initUserPressedOrDragged(instance) {
@@ -589,39 +589,22 @@
         font-size: 15px;
         color: #542674;
     }
+
     
 </style>
-
-<script>
-	var music = document.getElementById('video');
-	var state = 0;
-	document.addEventListener('touchstart', function(){    
-		  if(state==0){        
-			  music.play();        
-			  state=1;    
-		  }  
-	  }, false);
-	document.addEventListener("WeixinJSBridgeReady", function () {    
-		  music.play();
-	  }, false);  
-	//循环播放
-	music.onended = function () {    
-		music.load();    
-		music.play();
-	}    
-</script>
-
-
 <div class="music-player">
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="100%" width=330 height=86 
-		src="//music.163.com/outchain/player?type=2&id=1370748318&auto=1&height=66"></iframe>
+    
+        <div class="title center-align">
+            <i class="fas fa-music"></i>&nbsp;&nbsp;听听音乐
+        </div>
+    
     <div class="row">
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="kugou"
-                   type="song"
-                   id="37237401"
+                   server="netease"
+                   type="playlist"
+                   id="4965675848"
                    fixed='false'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#542674'
                    loop='all'
                    order='random'
@@ -635,12 +618,6 @@
 
 <script src="/libs/aplayer/APlayer.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
-<!-- 音频播放 -->
-<link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<div id="aplayer"></div>
-<script type="text/javascript" src="/libs/aplayer/APlayer.min.js"></script>
-<script type="text/javascript" src="/libs/aplayer/music.js"></script>
 
                         
 
@@ -672,8 +649,8 @@
             preload: 'auto',
             volume: Number('0.7'),
             video: {
-                url: '/medias/videos/demo.mp4',
-                pic: '/medias/videos/demo-pic.png',
+                url: '/player.bilibili.com/player.html?aid=370376431&bvid=BV1FZ4y147DC&cid=184345734&page=1',
+                pic: '',
                 thumbnails: ''
             }
         });
@@ -704,6 +681,53 @@
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2020/05/11/MarkDown/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="&#39;MarkDown&#39;">
+                            
+                            <span class="card-title">&#39;MarkDown&#39;</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                Markdown基本语法Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。相比WYSIWYG编辑器优点：1、因为是纯文本，所以只要支持Markdown的地方都能获得一样的编辑效果，可以让作者
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-11
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Markdown/" class="post-category">
+                                    Markdown
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/MarkDown/">
+                            <span class="chip bg-color">MarkDown</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2020/04/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
                         <div class="card-image">
                             
@@ -728,8 +752,12 @@
                             </span>
                             <span class="publish-author">
                                 
-                                <i class="fas fa-user fa-fw"></i>
-                                John Ming
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%97%A5%E5%B8%B8/" class="post-category">
+                                    日常
+                                </a>
+                                
                                 
                             </span>
                         </div>
@@ -755,41 +783,6 @@
                         </a>
                         
                     </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/04/28/hello-world/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                            
-                            <span class="card-title">Hello World</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-28
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Ming
-                                
-                            </span>
-                        </div>
-                    </div>
-
                     
                 </div>
             </div>
