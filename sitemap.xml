@@ -2,7 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://wangpanqiao.github.io/2020/05/11/MarkDown/</loc>
+    <loc>http://wangpanqiao.github.io/medias/baidu.html</loc>
+    
+    <lastmod>2020-05-12T14:13:42.837Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangpanqiao.github.io/medias/music/index.html</loc>
+    
+    <lastmod>2020-05-12T14:11:22.786Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangpanqiao.github.io/tags/index.html</loc>
+    
+    <lastmod>2020-05-12T14:02:32.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangpanqiao.github.io/contact/index.html</loc>
+    
+    <lastmod>2020-05-12T13:03:07.576Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangpanqiao.github.io/2020/0511undefined.html</loc>
     
     <lastmod>2020-05-12T02:41:32.127Z</lastmod>
     
@@ -16,23 +44,16 @@
   </url>
   
   <url>
-    <loc>http://wangpanqiao.github.io/2020/04/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>http://wangpanqiao.github.io/2020/0428undefined.html</loc>
     
     <lastmod>2020-05-11T12:47:14.489Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wangpanqiao.github.io/2020/04/28/hello-world/</loc>
+    <loc>http://wangpanqiao.github.io/2020/0428undefined.html</loc>
     
     <lastmod>2020-05-11T12:46:32.622Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangpanqiao.github.io/tags/index.html</loc>
-    
-    <lastmod>2020-04-28T09:14:51.431Z</lastmod>
     
   </url>
   
