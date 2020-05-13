@@ -397,7 +397,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
+                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul','志之所向，金石为开，谁能御之？','花开不是为了花落，而是为了开的更加灿烂。','如果放弃太早，你永远都不知道自己会错过什么。','没有礁石，就没有美丽的浪花；没有挫折，就没有壮丽的人生。','没有伞的孩子必须努力奔跑！'],
                         startDelay: 300,
                         typeSpeed: 100,
                         loop: true,
@@ -777,6 +777,39 @@
 
             </div>
         </div>
+        <div class="card">
+             <div class="card-content">
+                 <div class="card-content article-card-content">
+                     <div class="title center-align" data-aos="zoom-in-up">
+                         <i class="fa fa-address-book"></i>&nbsp;&nbsp;个人简历
+                      </div>
+                         <div id="articleContent" data-aos="fade-up">
+                             <h2 id="关于网站"><a href="#关于网站" class="headerlink" title="关于网站"></a>关于网站</h2><p>本网站完全用于测试和学术交流，请勿用于商业传播</p>
+<h2 id="关于作者"><a href="#关于作者" class="headerlink" title="关于作者"></a>关于作者</h2><p>作者属于在读大学生，主要从事植物分子生物和生物信息学研究，联系方式：<a href="mailto:963786304@qq.com">963786304@qq.com</a></p>
+<p>或者关注生信小能手公众号<br><img src="/medias/qrcode_for_weixin.jpg" alt="生信小能手"></p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+                         </div>
+                   </div>
+              </div>
+        </div>
     </div>
 </main>
 
@@ -921,6 +954,12 @@ $(function () {
     </a>
 </div>
 
+
+    <!-- 左上天气 -->
+    <script type="text/javascript">
+    WIDGET = {FID: '1U1o5ntsvP'}
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
 
     <script src="/libs/materialize/materialize.min.js"></script>
     <script src="/libs/masonry/masonry.pkgd.min.js"></script>
