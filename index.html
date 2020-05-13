@@ -373,6 +373,13 @@
 
 </header>
 
+
+    <!-- 左上天气 -->
+    <script type="text/javascript">
+    WIDGET = {FID: '1U1o5ntsvP'}
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+
     
 <style>
     .carousel-control {
@@ -513,7 +520,7 @@
         let coverSlider = $('.carousel');
 
         //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
+        let initUserPressedOrDraggedActive = true
 
         //用户触摸轮播自动 restartPlay
         function initUserPressedOrDragged(instance) {
@@ -1001,12 +1008,6 @@ $(function () {
     </a>
 </div>
 
-
-    <!-- 左上天气 -->
-    <script type="text/javascript">
-    WIDGET = {FID: '1U1o5ntsvP'}
-    </script>
-    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
 
     <script src="/libs/materialize/materialize.min.js"></script>
     <script src="/libs/masonry/masonry.pkgd.min.js"></script>
