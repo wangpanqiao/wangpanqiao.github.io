@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 
 
+
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="MarkDown, github">
@@ -139,11 +140,20 @@
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/musics">
+        <a href="/navigation/musics">
           
           <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>Musics</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/navigation/baidu">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>baidu</span>
         </a>
       </li>
       
@@ -267,11 +277,21 @@
               
                 <li>
 
-                  <a href="/musics " style="margin-left:75px">
+                  <a href="/navigation/musics " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
 			      
 		          <span>Musics</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/navigation/baidu " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>baidu</span>
                   </a>
                 </li>
               
@@ -519,14 +539,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    6 分
                 </div>
                 
 
@@ -576,15 +596,15 @@
 <hr>
 <p><code>*****</code></p>
 <hr>
-<h2 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h2><p>语法：<br><code>![图片alt](图片地址 &#39;&#39;图片title&#39;&#39;)</code><br>图片alt就是显示在图片下面的文字，相当于对图片内容的解释。<br>图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</p>
-<p>示例：<br>效果如下：<br><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&fm=27&gp=0.jpg" alt="blockchain" title="区块链"></p>
+<h2 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h2><p>语法：<br><code>![图片alt](图片地址 ''图片title'')</code><br>图片alt就是显示在图片下面的文字，相当于对图片内容的解释。<br>图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</p>
+<p>示例：<br>效果如下：<br><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg" alt="blockchain" title="区块链"></p>
 <p>上传本地图片直接点击导航栏的图片标志，选择图片即可<br>markdown格式追求的是简单、多平台统一。那么图片的存储就是一个问题，需要用图床，提供统一的外链，这样就不用在不同的平台去处理图片的问题了。才能做到书写一次，各处使用。<br>关于图床的选择我写了一篇文章，对网上存在的各种方法做了总结，需要的朋友可以看看。markdown图床</p>
 <h2 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h2><p>语法：<br><a href="超链接地址" title="超链接title">超链接名</a><br>title可加可不加</p>
 <p>示例：</p>
 <pre><code>[简书](http://jianshu.com)
 [百度](http://baidu.com)</code></pre><p>效果：<br><a href="http://jianshu.com" target="_blank" rel="noopener">简书</a><br><a href="http://baidu.com" target="_blank" rel="noopener">百度</a></p>
-<p>注：Markdown本身语法不支持链接在新页面中打开，貌似简书做了处理，是可以的。别的平台可能就不行了，如果想要在新页面中打开的话可以用html语言的a标签代替。<br>示例<br><code>&lt;a href=&quot;超链接地址&quot; target=&quot;_blank&quot;&gt;超链接名&lt;/a&gt;</code><br>效果<br><a href="超链接地址" target="_blank">超链接名</a></p>
-<p><code>&lt;a href=&quot;https://www.jianshu.com/u/1f5ac0cf6a8b&quot; target=&quot;_blank&quot;&gt;简书&lt;/a&gt;</code><br>效果<br><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a></p>
+<p>注：Markdown本身语法不支持链接在新页面中打开，貌似简书做了处理，是可以的。别的平台可能就不行了，如果想要在新页面中打开的话可以用html语言的a标签代替。<br>示例<br><code>&lt;a href="超链接地址" target="_blank"&gt;超链接名&lt;/a&gt;</code><br>效果<br><a href="超链接地址" target="_blank">超链接名</a></p>
+<p><code>&lt;a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank"&gt;简书&lt;/a&gt;</code><br>效果<br><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a></p>
 <h2 id="七、列表"><a href="#七、列表" class="headerlink" title="七、列表"></a>七、列表</h2><p>无序列表<br>语法：<br>无序列表用 - + * 任何一种都可以</p>
 <pre><code>- 列表内容
 + 列表内容
@@ -625,7 +645,7 @@
 <p>示例：<br>单行代码<br>```create database hero;```</p>
 <pre><code>create database hero;</code></pre><p>代码块<br>function fun(){<br>  echo “这是一句非常牛逼的代码”;<br>}<br>fun();<br>示例:</p>
 <pre><code>    function fun(){
-         echo &quot;这是一句非常牛逼的代码&quot;;
+         echo "这是一句非常牛逼的代码";
     }
     fun();</code></pre><h2 id="十、流程图"><a href="#十、流程图" class="headerlink" title="十、流程图"></a>十、流程图</h2><pre class=" language-flow"><code class="language-flow">st=>start: 开始
 op=>operation: My Operation
@@ -636,7 +656,25 @@ cond(yes)->e
 cond(no)->op</code></pre>
 <p>效果如下:<br>flow<br>st=&gt;start: 开始<br>op=&gt;operation: My Operation<br>cond=&gt;condition: Yes or No?<br>e=&gt;end<br>st-&gt;op-&gt;cond<br>cond(yes)-&gt;e<br>cond(no)-&gt;op</p>
 <p>graph TB<br>heyJude[hey Jude] –&gt; doNot(don’t)<br>doNot –&gt; makeItBad[make it bad]<br>doNot –&gt; beAfraid[be afraid]<br>doNot –&gt; letMeDown[let me down]<br>makeItBad –&gt; takeASadSong[take a sad song and make it better]<br>beAfraid –&gt; youWereMade[you were made to go out and get her]<br>letMeDown –&gt; youHaveFound[you have found her, now go and get her]<br>takeASadSong –&gt; rememberTo[remember to]<br>youWereMade –&gt; rememberTo<br>youHaveFound –&gt; rememberTo<br>rememberTo –&gt; letHerInto[let her into your heart]<br>rememberTo –&gt; letHerUnder[let her under your skin]<br>letHerInto –&gt; thenYou[then you]<br>letHerUnder –&gt; thenYou<br>thenYou –&gt; canStart[can start]<br>thenYou –&gt; begin[begin]<br>canStart –&gt; toMakeItBetter[to make it better]<br>begin –&gt; toMakeItBetter<br>toMakeItBetter –&gt; betterbetter[better better better better better waaaaa]<br>betterbetter –&gt; na((na))<br>na –&gt; na</p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -1075,6 +1113,8 @@ cond(no)->op</code></pre>
                             自我介绍我叫小小明，是大数据界的一名小学生，主要热衷于R，python语言学习
 关注生物信息学的最新技术和方法
 希望和大家一起学习讨论
+        document.querySelectorAll('.github-emoji')
+ 
                         
                     </div>
                     <div class="publish-info">
@@ -1390,7 +1430,6 @@ $(function () {
     </a>
 </div>
 
-    
     <!-- 左上天气 -->
     <script type="text/javascript">
     WIDGET = {FID: 'R1vbBhAoIF'}

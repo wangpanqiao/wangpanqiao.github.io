@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 
 
+
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="标签: R, github">
@@ -139,11 +140,20 @@
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/musics">
+        <a href="/navigation/musics">
           
           <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>Musics</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/navigation/baidu">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>baidu</span>
         </a>
       </li>
       
@@ -267,11 +277,21 @@
               
                 <li>
 
-                  <a href="/musics " style="margin-left:75px">
+                  <a href="/navigation/musics " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
 			      
 		          <span>Musics</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/navigation/baidu " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>baidu</span>
                   </a>
                 </li>
               
@@ -388,7 +408,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/2.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/3.jpg)');
 </script>
 
 
@@ -408,19 +428,10 @@
             <div class="tag-chips">
                 
                 
-                <a href="/tags/MarkDown/" title="MarkDown: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="MarkDown" style="background-color: #F9EBEA;">MarkDown
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/perl/" title="perl: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="perl" style="background-color: #F5EEF8;">perl
+                            data-tagname="perl" style="background-color: #F9EBEA;">perl
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -429,7 +440,7 @@
                 <a href="/tags/R/" title="R: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
-                            data-tagname="R" style="background-color: #D5F5E3;">R
+                            data-tagname="R" style="background-color: #F5EEF8;">R
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -438,7 +449,7 @@
                 <a href="/tags/python/" title="python: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="python" style="background-color: #E8F8F5;">python
+                            data-tagname="python" style="background-color: #D5F5E3;">python
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -447,7 +458,16 @@
                 <a href="/tags/shell/" title="shell: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="shell" style="background-color: #FEF9E7;">shell
+                            data-tagname="shell" style="background-color: #E8F8F5;">shell
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/MarkDown/" title="MarkDown: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="MarkDown" style="background-color: #FEF9E7;">MarkDown
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -641,7 +661,6 @@ $(function () {
     </a>
 </div>
 
-    
     <!-- 左上天气 -->
     <script type="text/javascript">
     WIDGET = {FID: 'R1vbBhAoIF'}

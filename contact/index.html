@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 
 
+
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="contact, github">
@@ -139,11 +140,20 @@
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/musics">
+        <a href="/navigation/musics">
           
           <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>Musics</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/navigation/baidu">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>baidu</span>
         </a>
       </li>
       
@@ -267,11 +277,21 @@
               
                 <li>
 
-                  <a href="/musics " style="margin-left:75px">
+                  <a href="/navigation/musics " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
 			      
 		          <span>Musics</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/navigation/baidu " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>baidu</span>
                   </a>
                 </li>
               
@@ -388,7 +408,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/2.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/3.jpg)');
 </script>
 
 
@@ -403,7 +423,25 @@
                     <i class="fas fa-comments"></i>&nbsp;&nbsp;留言板
                 </div>
                 <h2 id="畅所欲言"><a href="#畅所欲言" class="headerlink" title="畅所欲言"></a>畅所欲言</h2><h3 id="在这里可以留下你的足迹，欢迎在下方留言，欢迎交换友链，一起交流学习！"><a href="#在这里可以留下你的足迹，欢迎在下方留言，欢迎交换友链，一起交流学习！" class="headerlink" title="在这里可以留下你的足迹，欢迎在下方留言，欢迎交换友链，一起交流学习！"></a>在这里可以留下你的足迹，欢迎在下方留言，欢迎交换友链，一起交流学习！</h3><p>有任何问题和建议都可以留言，我会在看到的第一时间回复您，感谢大家的支持～</p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
         </div>
         <div class="card">
@@ -826,7 +864,6 @@ $(function () {
     </a>
 </div>
 
-    
     <!-- 左上天气 -->
     <script type="text/javascript">
     WIDGET = {FID: 'R1vbBhAoIF'}

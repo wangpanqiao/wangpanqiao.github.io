@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 
 
+
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="关于我, github">
@@ -139,11 +140,20 @@
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/musics">
+        <a href="/navigation/musics">
           
           <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>Musics</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/navigation/baidu">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>baidu</span>
         </a>
       </li>
       
@@ -267,11 +277,21 @@
               
                 <li>
 
-                  <a href="/musics " style="margin-left:75px">
+                  <a href="/navigation/musics " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
 			      
 		          <span>Musics</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/navigation/baidu " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>baidu</span>
                   </a>
                 </li>
               
@@ -395,7 +415,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/2.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/3.jpg)');
 </script>
 
 
@@ -641,7 +661,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"Markdown","value":1},{"name":"日常","value":2}],
+                data: [{"name":"日常","value":2},{"name":"Markdown","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -665,7 +685,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["MarkDown","perl","R","python","shell"]
+                data: ["perl","R","python","shell","MarkDown"]
             }
         ],
         yAxis: [
@@ -768,7 +788,25 @@
                              <h2 id="关于网站"><a href="#关于网站" class="headerlink" title="关于网站"></a>关于网站</h2><p>本网站完全用于测试和学术交流，请勿用于商业传播</p>
 <h2 id="关于作者"><a href="#关于作者" class="headerlink" title="关于作者"></a>关于作者</h2><p>作者属于在读大学生，主要从事植物分子生物和生物信息学研究，联系方式：<a href="mailto:963786304@qq.com">963786304@qq.com</a></p>
 <p>或者关注生信小能手公众号<br><img src="/medias/qrcode_for_weixin.jpg" alt="生信小能手"></p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
                          </div>
                    </div>
               </div>
@@ -917,7 +955,6 @@ $(function () {
     </a>
 </div>
 
-    
     <!-- 左上天气 -->
     <script type="text/javascript">
     WIDGET = {FID: 'R1vbBhAoIF'}

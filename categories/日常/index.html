@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 
 
+
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="分类: 日常, github">
@@ -139,11 +140,20 @@
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/musics">
+        <a href="/navigation/musics">
           
           <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>Musics</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/navigation/baidu">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>baidu</span>
         </a>
       </li>
       
@@ -267,11 +277,21 @@
               
                 <li>
 
-                  <a href="/musics " style="margin-left:75px">
+                  <a href="/navigation/musics " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
 			      
 		          <span>Musics</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/navigation/baidu " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>baidu</span>
                   </a>
                 </li>
               
@@ -388,7 +408,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/2.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/3.jpg)');
 </script>
 
 
@@ -409,20 +429,20 @@
                 
                 
                 
-                <a href="/categories/Markdown/" title="Markdown: 1">
+                <a href="/categories/%E6%97%A5%E5%B8%B8/" title="日常: 2">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #F9EBEA;">Markdown
-                        <span class="tag-length">1</span>
+                             chip-active "
+                            style="background-color: #F9EBEA;">日常
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/%E6%97%A5%E5%B8%B8/" title="日常: 2">
+                <a href="/categories/Markdown/" title="Markdown: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            style="background-color: #F5EEF8;">日常
-                        <span class="tag-length">2</span>
+                             chip-default "
+                            style="background-color: #F5EEF8;">Markdown
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
@@ -455,6 +475,8 @@
                                 自我介绍我叫小小明，是大数据界的一名小学生，主要热衷于R，python语言学习
 关注生物信息学的最新技术和方法
 希望和大家一起学习讨论
+        document.querySelectorAll('.github-emoji')
+ 
                             
                         </div>
                         <div class="publish-info">
@@ -683,7 +705,6 @@ $(function () {
     </a>
 </div>
 
-    
     <!-- 左上天气 -->
     <script type="text/javascript">
     WIDGET = {FID: 'R1vbBhAoIF'}
