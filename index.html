@@ -373,13 +373,6 @@
 
 </header>
 
-
-    <!-- 左上天气 -->
-    <script type="text/javascript">
-    WIDGET = {FID: '1U1o5ntsvP'}
-    </script>
-    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
-
     
 <style>
     .carousel-control {
@@ -461,7 +454,8 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/3.jpg)');
+    <!-- $('.bg-cover').css('background-image', 'url(/medias/banner/4.jpg)'); -->
+    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
 
 
@@ -1007,6 +1001,13 @@ $(function () {
         <i class="fas fa-arrow-up"></i>
     </a>
 </div>
+
+
+    <!-- 左上天气 -->
+    <script type="text/javascript">
+    WIDGET = {FID: '1U1o5ntsvP'}
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
 
 
     <script src="/libs/materialize/materialize.min.js"></script>

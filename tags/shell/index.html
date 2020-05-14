@@ -373,13 +373,6 @@
 
 </header>
 
-
-    <!-- 左上天气 -->
-    <script type="text/javascript">
-    WIDGET = {FID: '1U1o5ntsvP'}
-    </script>
-    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
-
     <div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
@@ -414,7 +407,8 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/3.jpg)');
+    <!-- $('.bg-cover').css('background-image', 'url(/medias/banner/4.jpg)'); -->
+    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
 
 
@@ -434,19 +428,10 @@
             <div class="tag-chips">
                 
                 
-                <a href="/tags/MarkDown/" title="MarkDown: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="MarkDown" style="background-color: #F9EBEA;">MarkDown
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/perl/" title="perl: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="perl" style="background-color: #F5EEF8;">perl
+                            data-tagname="perl" style="background-color: #F9EBEA;">perl
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -455,7 +440,7 @@
                 <a href="/tags/R/" title="R: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="R" style="background-color: #D5F5E3;">R
+                            data-tagname="R" style="background-color: #F5EEF8;">R
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -464,7 +449,7 @@
                 <a href="/tags/python/" title="python: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="python" style="background-color: #E8F8F5;">python
+                            data-tagname="python" style="background-color: #D5F5E3;">python
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -473,7 +458,16 @@
                 <a href="/tags/shell/" title="shell: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
-                            data-tagname="shell" style="background-color: #FEF9E7;">shell
+                            data-tagname="shell" style="background-color: #E8F8F5;">shell
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/MarkDown/" title="MarkDown: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="MarkDown" style="background-color: #FEF9E7;">MarkDown
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -666,6 +660,13 @@ $(function () {
         <i class="fas fa-arrow-up"></i>
     </a>
 </div>
+
+
+    <!-- 左上天气 -->
+    <script type="text/javascript">
+    WIDGET = {FID: '1U1o5ntsvP'}
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
 
 
     <script src="/libs/materialize/materialize.min.js"></script>
